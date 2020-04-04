@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.creating.www</groupId>
+	<artifactId>me-manager</artifactId>
+	<packaging>pom</packaging>
+	<version>0.0.1</version>
+	<name>me-manager Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<developers>
+		<developer>
+			<roles>
+				<role>程序员</role>
+			</roles>
+			<name>hack0303</name>
+		</developer>
+	</developers>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+	</properties>
+	<modules>
+		<module>me-manager-core</module>
+	</modules>
+</project>
