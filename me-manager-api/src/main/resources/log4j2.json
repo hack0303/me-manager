@@ -1,0 +1,7 @@
+{"configuration":{
+"appenders":{
+"Console":{"name":"STDOUT","target":"SYSTEM_OUT","PatternLayout":{"pattern":"%d %-5p [%t] %C{2} (%F:%L) - %m%n"}}
+,"File":{"name":"A","fileName":"E:/logs/file.log","append":"false","PatternLayout":{"pattern":"%d %-5p [%t] %C{2} (%F:%L) - %m%n"}}
+},
+"loggers":{"logger":{"name":"com.creating.www","level":"INFO","AppenderRef":{"ref":"A"}},"root":{"level":"INFO","AppenderRef":{"ref":"STDOUT"}}}
+}}
