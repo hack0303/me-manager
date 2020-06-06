@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.creating.www</groupId>
 	<artifactId>me-manager</artifactId>
 	<packaging>pom</packaging>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>me-manager Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<developers>
@@ -22,6 +20,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<springboot.version>2.2.6.RELEASE</springboot.version>
+		<groovy.version>3.0.3</groovy.version>
 	</properties>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -35,7 +34,10 @@
 		<module>me-manager-config</module>
 		<module>me-manager-common</module>
 		<module>me-manager-api</module>
-	</modules>
+		<module>me-manager-persistent</module>
+    <module>me-manager-scripts</module>
+    <module>me-manager-doc</module>
+  </modules>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -68,6 +70,11 @@
 				<artifactId>me-manager-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy</artifactId>
+				<version>${groovy.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
@@ -94,10 +101,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
-		  <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-      </dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
 	</dependencies>
 	<profiles>
 		<profile>
@@ -121,5 +128,29 @@
 	</profiles>
 
 	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.gmavenplus</groupId>
+					<artifactId>gmavenplus-plugin</artifactId>
+					<version>1.9.0</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>addSources</goal>
+								<goal>addTestSources</goal>
+								<goal>generateStubs</goal>
+								<goal>compile</goal>
+								<goal>generateTestStubs</goal>
+								<goal>compileTests</goal>
+								<goal>removeStubs</goal>
+								<goal>removeTestStubs</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
+
 </project>

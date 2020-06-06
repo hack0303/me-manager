@@ -7,10 +7,19 @@
     <artifactId>me-manager</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>me-manager-core</artifactId>
-  <name>me-manager-core</name>
+  <artifactId>me-manager-doc</artifactId>
+  <packaging>pom</packaging>
+  <version>0.0.1</version>
+  <name>me-manager-doc</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 </project>
