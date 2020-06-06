@@ -37,6 +37,7 @@
 		<module>me-manager-persistent</module>
     <module>me-manager-scripts</module>
     <module>me-manager-doc</module>
+    <module>me-manager-admin</module>
   </modules>
 	<dependencyManagement>
 		<dependencies>
