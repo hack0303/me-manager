@@ -20,7 +20,13 @@ class HelloWorldController {
 
     @GetMapping("hello-world")
     public String showHelloWorld(){
+        log.info("{}","is accessing");
         return "hello world";
     }
+    
+    
+    
+    
+    
 }
 

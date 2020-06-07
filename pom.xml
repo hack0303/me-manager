@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.creating.www</groupId>
+    <groupId>com.creating.www.me</groupId>
     <artifactId>me-manager</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
@@ -45,32 +45,32 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.creating.www</groupId>
+                <groupId>com.creating.www.me</groupId>
                 <artifactId>me-manager-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.creating.www</groupId>
+                <groupId>com.creating.www.me</groupId>
                 <artifactId>me-manager-dao</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.creating.www</groupId>
+                <groupId>com.creating.www.me</groupId>
                 <artifactId>me-manager-service</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.creating.www</groupId>
+                <groupId>com.creating.www.me</groupId>
                 <artifactId>me-manager-config</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.creating.www</groupId>
+                <groupId>com.creating.www.me</groupId>
                 <artifactId>me-manager-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.creating.www</groupId>
+                <groupId>com.creating.www.me</groupId>
                 <artifactId>me-manager-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -108,6 +108,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
              <dependency>
                 <groupId>org.codehaus.groovy</groupId>
@@ -211,10 +212,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
