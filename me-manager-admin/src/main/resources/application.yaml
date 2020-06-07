@@ -1,0 +1,6 @@
+server:
+ port: @server.admin@
+
+spring:
+ profiles:
+  active: @active.profile@
