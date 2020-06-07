@@ -1,4 +1,4 @@
-package org.me.manager.admin;
+package com.creating.www.me.manager.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

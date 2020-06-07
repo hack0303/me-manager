@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package org.me.manager.admin.controller
+package com.creating.www.me.manager.admin.controller
 
-import lombok.extern.slf4j.Slf4j
+import groovy.util.logging.Slf4j
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -16,17 +16,12 @@ import org.springframework.web.bind.annotation.RestController
  */
 @Slf4j
 @RestController
-class HelloWorldController {
-
+class HelloWorldGroovyController {
+	
     @GetMapping("hello-world")
     public String showHelloWorld(){
-        log.info("{}","is accessing");
+        log.info("groovy {}","access");
         return "hello world";
     }
-    
-    
-    
-    
-    
 }
 

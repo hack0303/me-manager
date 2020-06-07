@@ -110,10 +110,10 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
-             <dependency>
-                <groupId>org.codehaus.groovy</groupId>
-                <artifactId>groovy</artifactId>
-            </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy</artifactId>
+        </dependency>
     </dependencies>
     <profiles>
         <profile>
@@ -176,6 +176,23 @@
         <sourceDirectory>src/main/java</sourceDirectory>
         <pluginManagement>
             <plugins>
+                <!--
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <compilerId>groovy-eclipse-compiler</compilerId>
+                        <fork>true</fork>
+                        <verbose>false</verbose>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <compilerArguments>
+                            <javaAgentClass>lombok.core.Agent</javaAgentClass>
+                        </compilerArguments>
+                    </configuration>
+                </plugin>
+                                --> 
                 <plugin>
                     <groupId>org.codehaus.gmavenplus</groupId>
                     <artifactId>gmavenplus-plugin</artifactId>
