@@ -12,7 +12,8 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <modules>
-        <module>me-web-config</module>
+        <module>me-config-web</module>
+        <module>me-config-es</module>
     </modules>
 
 

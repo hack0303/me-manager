@@ -73,7 +73,7 @@
             </dependency>
             <dependency>
                 <artifactId>com.creating.www.me</artifactId>
-                <groupId>me-web-config</groupId>
+                <groupId>me-config-web</groupId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -125,6 +125,21 @@
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy</artifactId>
+        </dependency>
+        <!-- test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-core</artifactId>
+            <scope>test</scope></dependency>
+        <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-spring</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <profiles>
