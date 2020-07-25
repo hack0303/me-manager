@@ -23,7 +23,7 @@
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <springboot.version>2.2.6.RELEASE</springboot.version>
         <groovy.version>3.0.3</groovy.version>
-        
+        <spring.spock>2.0-M3-groovy-3.0</spring.spock>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -135,11 +135,14 @@
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>
-            <scope>test</scope></dependency>
+            <scope>test</scope>
+            <version>${spring.spock}</version>
+        </dependency>
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-spring</artifactId>
             <scope>test</scope>
+            <version>${spring.spock}</version>
         </dependency>
     </dependencies>
     <profiles>
@@ -221,7 +224,7 @@
                         </compilerArguments>
                     </configuration>
                 </plugin>
-                                --> 
+                                -->
                 <plugin>
                     <groupId>org.codehaus.gmavenplus</groupId>
                     <artifactId>gmavenplus-plugin</artifactId>
