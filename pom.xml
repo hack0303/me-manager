@@ -41,6 +41,8 @@
         <module>me-manager-scripts</module>
         <module>me-manager-doc</module>
         <module>me-manager-admin</module>
+        <module>me-manager-task</module>
+        <module>me-manager-process</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -62,6 +64,16 @@
             <dependency>
                 <groupId>com.creating.www.me</groupId>
                 <artifactId>me-manager-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.creating.www.me</groupId>
+                <artifactId>me-manager-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>com.creating.www.me</artifactId>
+                <groupId>me-web-config</groupId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -137,6 +149,7 @@
     </profiles>
 
     <build>
+        <!--
         <filters>
             <filter>
                 ${maven.multiModuleProjectDirectory}/config/filter-${active.profile}.properties
@@ -157,6 +170,7 @@
                 ${maven.multiModuleProjectDirectory}/config/redis/filter-${active.profile}.properties
             </filter>
         </filters>
+        -->
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.creating.www.me.manager.config.ServletConfig,\
-com.creating.www.me.manager.config.CrosMvcConfig
