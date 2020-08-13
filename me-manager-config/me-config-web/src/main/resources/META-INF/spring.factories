@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.creating.www.me.manager.web.config.Swagger2Config,\
+com.creating.www.me.manager.web.config.ServletConfig,\
+com.creating.www.me.manager.web.config.CrosMvcConfig,\
+com.creating.www.me.manager.web.config.FilterConfig
