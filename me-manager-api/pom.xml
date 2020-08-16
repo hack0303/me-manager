@@ -1,25 +1,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.creating.www.me</groupId>
-		<artifactId>me-manager</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<artifactId>me-manager-api</artifactId>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.creating.www.me</groupId>
+        <artifactId>me-manager</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>me-manager-api</artifactId>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.creating.www.me</groupId>
-			<artifactId>me-manager-config</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.creating.www.me</groupId>
-			<artifactId>me-manager-common</artifactId>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>com.creating.www.me</groupId>
+            <artifactId>me-manager-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.creating.www.me</groupId>
+            <artifactId>me-manager-common</artifactId>
+        </dependency>
+    </dependencies>
 
-	<build>
-	</build>
+    <build>
+        <filters>
+            <filter>../config/filter-${active.profile}.properties</filter>
+            <filter>../config/es/filter-${active.profile}.properties</filter>
+            <filter>../config/kafka/filter-${active.profile}.properties</filter>
+            <filter>../config/mongo/filter-${active.profile}.properties</filter>
+            <filter>../config/mysql/filter-${active.profile}.properties</filter>
+            <filter>../config/redis/filter-${active.profile}.properties</filter>
+        </filters>
+    </build>
 </project>

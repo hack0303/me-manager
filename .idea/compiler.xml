@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="me-config-es" />
+        <module name="me-config-nosql" />
+        <module name="me-config-rdb" />
+        <module name="me-config-web" />
+        <module name="me-manager-admin" />
+        <module name="me-manager-api" />
+        <module name="me-manager-common" />
+        <module name="me-manager-core" />
+        <module name="me-manager-dao-es" />
+        <module name="me-manager-persistent-es" />
+        <module name="me-manager-process" />
+        <module name="me-manager-service" />
+        <module name="me-manager-task" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-archiver (1)" target="1.5" />
+      <module name="maven-archiver (2)" target="1.5" />
+      <module name="maven-archiver (3)" target="1.5" />
+      <module name="maven-archiver (4)" target="1.5" />
+      <module name="maven-archiver (5)" target="1.5" />
+      <module name="maven-archiver (6)" target="1.5" />
+      <module name="maven-archiver (7)" target="1.5" />
+      <module name="maven-archiver (8)" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
