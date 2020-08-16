@@ -7,9 +7,7 @@
     </parent>
 
     <artifactId>me-manager-config</artifactId>
-    <groupId>com.creating.www.me</groupId>
     <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
 
     <modules>
         <module>me-config-web</module>

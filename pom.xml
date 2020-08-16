@@ -26,6 +26,7 @@
         <spring.spock>2.0-M3-groovy-3.0</spring.spock>
         <swagger-bootstrap-ui.version>1.9.6</swagger-bootstrap-ui.version>
         <swagger2.version>2.9.2</swagger2.version>
+        <es.version>7.8.0</es.version>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -70,12 +71,7 @@
             </dependency>
             <dependency>
                 <groupId>com.creating.www.me</groupId>
-                <artifactId>me-manager-config</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <artifactId>com.creating.www.me</artifactId>
-                <groupId>me-config-web</groupId>
+                <artifactId>me-config-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -96,7 +92,7 @@
             <dependency>
                 <groupId>org.elasticsearch.client</groupId>
                 <artifactId>transport</artifactId>
-                <version>7.8.0</version>
+                <version>${es.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
@@ -121,11 +117,6 @@
                     <artifactId>spring-boot-starter-logging</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
