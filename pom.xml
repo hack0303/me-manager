@@ -27,6 +27,9 @@
         <swagger-bootstrap-ui.version>1.9.6</swagger-bootstrap-ui.version>
         <swagger2.version>2.9.2</swagger2.version>
         <es.version>7.8.0</es.version>
+        <!--
+        <lombok.version>1.8.0</lombok.version>
+        -->
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -105,6 +108,30 @@
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger2.version}</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <!--
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            -->
+
+            <!-- test -->
+            <dependency>
+                <groupId>org.spockframework</groupId>
+                <artifactId>spock-core</artifactId>
+                <scope>test</scope>
+                <version>${spring.spock}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.spockframework</groupId>
+                <artifactId>spock-spring</artifactId>
+                <scope>test</scope>
+                <version>${spring.spock}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -144,14 +171,10 @@
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>
-            <scope>test</scope>
-            <version>${spring.spock}</version>
         </dependency>
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-spring</artifactId>
-            <scope>test</scope>
-            <version>${spring.spock}</version>
         </dependency>
     </dependencies>
     <profiles>

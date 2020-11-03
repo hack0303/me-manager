@@ -29,6 +29,10 @@
              <groupId>com.creating.www.me</groupId>
             <artifactId>me-manager-config</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.creating.www.me</groupId>
+            <artifactId>me-config-web</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
