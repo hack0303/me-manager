@@ -18,7 +18,7 @@ VOLUME /tmp
 ADD target/me-manager-admin-0.0.1-SNAPSHOT.jar app.jar
 
 #启动容器时的进程
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=18001","/app.jar"]
 
-#暴露8080端口
-EXPOSE 8080
+#声明需要暴露的端口
+EXPOSE 8001
